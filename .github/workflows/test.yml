@@ -28,4 +28,4 @@ jobs:
         shell: bash
         run: |
           git remote add codecommit https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/myapp
-          git push origin develop --force
+          git push codecommit develop --force
