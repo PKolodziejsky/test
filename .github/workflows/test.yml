@@ -21,5 +21,5 @@ jobs:
           git config --global credential.UseHttpPath true
           git config --global credential.helper '!aws codecommit credential-helper $@'
           git remote add codecommit https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/myapp
-          git push codecommit develop --force
+          git push codecommit ${GITHUB_REF##*/} --force
 
